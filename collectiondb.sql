@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.7.33)
 # Database: exercise2
-# Generation Time: 2021-03-29 13:30:22 +0000
+# Generation Time: 2021-03-29 13:47:58 +0000
 # ************************************************************
 
 
@@ -28,8 +28,8 @@ DROP TABLE IF EXISTS `collectionapp`;
 
 CREATE TABLE `collectionapp` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `Brand` varchar(30) DEFAULT '',
-  `Model` varchar(30) DEFAULT '',
+  `Brand` varchar(30) DEFAULT NULL,
+  `Model` varchar(30) DEFAULT NULL,
   `Year_released` year(4) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
