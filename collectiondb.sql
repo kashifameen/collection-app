@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.7.33)
 # Database: exercise2
-# Generation Time: 2021-03-29 11:27:30 +0000
+# Generation Time: 2021-03-29 13:08:18 +0000
 # ************************************************************
 
 
@@ -30,14 +30,14 @@ CREATE TABLE `collectionapp` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `Brand` varchar(11) DEFAULT NULL,
   `Model` varchar(11) DEFAULT NULL,
-  `Year` int(11) DEFAULT NULL,
+  `Year_released` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 LOCK TABLES `collectionapp` WRITE;
 /*!40000 ALTER TABLE `collectionapp` DISABLE KEYS */;
 
-INSERT INTO `collectionapp` (`id`, `Brand`, `Model`, `Year`)
+INSERT INTO `collectionapp` (`id`, `Brand`, `Model`, `Year_released`)
 VALUES
 	(1,'Audi','RS3',2015),
 	(2,'Mercedes','A45',2018),
