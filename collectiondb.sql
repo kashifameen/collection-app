@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.7.33)
 # Database: exercise2
-# Generation Time: 2021-03-29 13:08:18 +0000
+# Generation Time: 2021-03-29 13:30:22 +0000
 # ************************************************************
 
 
@@ -28,9 +28,9 @@ DROP TABLE IF EXISTS `collectionapp`;
 
 CREATE TABLE `collectionapp` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `Brand` varchar(11) DEFAULT NULL,
-  `Model` varchar(11) DEFAULT NULL,
-  `Year_released` int(11) DEFAULT NULL,
+  `Brand` varchar(30) DEFAULT '',
+  `Model` varchar(30) DEFAULT '',
+  `Year_released` year(4) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -39,16 +39,16 @@ LOCK TABLES `collectionapp` WRITE;
 
 INSERT INTO `collectionapp` (`id`, `Brand`, `Model`, `Year_released`)
 VALUES
-	(1,'Audi','RS3',2015),
-	(2,'Mercedes','A45',2018),
-	(3,'BMW','140i',2020),
-	(4,'Volkswagen','Golf R',2021),
-	(5,'Mercedes','C63',2015),
-	(6,'BMW','M3',2021),
-	(7,'Audi','RS6',2019),
-	(8,'BMW','M4',2021),
-	(9,'Audi','RS5',2019),
-	(10,'Bentley','Continental',2018);
+	(1,'Audi','RS3','2015'),
+	(2,'Mercedes','A45','2018'),
+	(3,'BMW','140i','2020'),
+	(4,'Volkswagen','Golf R','2021'),
+	(5,'Mercedes','C63','2015'),
+	(6,'BMW','M3','2021'),
+	(7,'Audi','RS6','2019'),
+	(8,'BMW','M4','2021'),
+	(9,'Audi','RS5','2019'),
+	(10,'Bentley','Continental','2018');
 
 /*!40000 ALTER TABLE `collectionapp` ENABLE KEYS */;
 UNLOCK TABLES;
