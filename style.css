@@ -10,6 +10,13 @@ h1 {
     text-align: center;
     margin: 25px 0 0 0;
 }
+.button {
+    display: flex;
+}
+.addtocollectionbtn {
+    text-align: center;
+    padding: 10px;
+}
 .container {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;

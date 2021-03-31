@@ -4,7 +4,7 @@
 <div class = "inputform">
     <h1>Add a new car to the database</h1>
     <form method="POST">
-    <div >
+    <div>
         <label for= "brand">Brand</label>
         <input type= "text" id= "brand" name= "brand" placeholder= "Brand name.." required>
     </div>
