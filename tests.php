@@ -6,13 +6,13 @@ class Tests extends TestCase
 {
     public function testcarTable_success1()
     {
-        $practice_array = [[
+        $practice_array= [[
             'Brand' => 'Mercedes',
             'Model' => 'E63',
             'Year_released' => '2020'
         ]];
-        $result = carTable($practice_array);
-        $expected = '<div class = "container"><div>Brand: Mercedes<br>Model: E63<br>Year Released: 2020</div></div>';
+        $result= carTable($practice_array);
+        $expected= '<div class = "container"><div>Brand: Mercedes<br>Model: E63<br>Year Released: 2020</div></div>';
         $this->assertEquals($result, $expected);
     }
     public function testcarTable_malformed1()
