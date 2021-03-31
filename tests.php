@@ -26,5 +26,3 @@ class Tests extends TestCase
         carTable("hello");
     }
 }
-
-
