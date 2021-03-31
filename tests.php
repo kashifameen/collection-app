@@ -14,10 +14,7 @@ class Tests extends TestCase
         $result = carTable($practice_array);
         $expected = '<div class = "container"><div>Brand: Mercedes<br>Model: E63<br>Year Released: 2020</div></div>';
         $this->assertEquals($result, $expected);
-
     }
-
-
     public function testcarTable_malformed1()
     {
         $this->expectException(TypeError::class);
