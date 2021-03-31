@@ -1,9 +1,4 @@
 <?php
-//$db = new PDO('mysql:host=db; dbname=collectionDB', 'root', 'password');
-//$db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
-//$query = $db->prepare('SELECT `Brand`, `Model`, `Year_released` FROM `collectionapp`;');
-//$query->execute();
-//$result = $query->fetchAll();
 function connectToDB(): object
 {
     $db= new PDO("mysql:host=db; dbname=collectionDB", "root", "password");
@@ -13,7 +8,7 @@ function connectToDB(): object
 
 function getAllFromDB(object $db): array
 {
-    $query= $db->prepare('SELECT * FROM `collectionapp`;');
+    $query= $db->prepare('SELECT `Brand`,`Model`,`Year_released` FROM `collectionapp`;');
     $query->execute();
     return $query->fetchAll();
 }
