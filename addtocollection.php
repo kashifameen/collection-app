@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class = "inputform">
+    <div class = "inputform">
     <h1>Add a new car to the database</h1>
     <form method="POST">
     <div>
@@ -24,6 +24,6 @@
     </div>
     </form>
     <button><a href = "main.php">Return To Collection</a></button>
-</div>
+    </div>
 </body>
 </html>
