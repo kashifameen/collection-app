@@ -26,4 +26,5 @@ function carTable(array $query):string
     $carTableString .= '</div>';
     return $carTableString;
 }
+
 ?>
