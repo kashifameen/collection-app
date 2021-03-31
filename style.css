@@ -6,17 +6,21 @@ body {
     width: 900px;
     margin: 0 auto;
 }
+
 h1 {
     text-align: center;
     margin: 25px 0 0 0;
 }
+
 .button {
     display: flex;
 }
+
 .addtocollectionbtn {
     text-align: center;
     padding: 10px;
 }
+
 .container {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -25,6 +29,7 @@ h1 {
     column-gap: 15px;
     row-gap: 15px;
 }
+
 .container div {
     width: 100%;
     height: 200px;
@@ -36,13 +41,13 @@ h1 {
     align-items: center;
     font-size: 25px;
 }
+
 .container div:hover {
     border:2px double #fff;
 }
 .inputform{
     justify-content: center;
     margin: 5px;
-
 }
 
 .inputform input {
@@ -57,5 +62,4 @@ h1 {
 
 a {
     text-decoration: none;
-
 }
