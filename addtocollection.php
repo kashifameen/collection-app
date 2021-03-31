@@ -26,7 +26,9 @@ require_once 'functions.php';
         <input type="submit" value="submit">
     </div>
     </form>
-    <button><a href= "main.php">Return To Collection</a></button>
+
+    <button><a href = "main.php">Return To Collection</a></button>
+
     </div>
 </body>
 </html>
