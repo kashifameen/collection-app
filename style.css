@@ -32,3 +32,23 @@ h1 {
 .container div:hover {
     border:2px double #fff;
 }
+.inputform{
+    justify-content: center;
+    margin: 5px;
+
+}
+
+.inputform input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.inputform textarea {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+
+}
