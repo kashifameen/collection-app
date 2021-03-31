@@ -12,7 +12,7 @@ class Tests extends TestCase
             'Year_released' => '2020'
         ]];
         $result= carTable($practice_array);
-        $expected= '<div class = "container"><div>Brand: Mercedes<br>Model: E63<br>Year Released: 2020</div></div>';
+        $expected= '<div class= "container"><div>Brand: Mercedes<br>Model: E63<br>Year Released: 2020</div></div>';
         $this->assertEquals($result, $expected);
     }
     public function testcarTable_malformed1()
