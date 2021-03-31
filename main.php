@@ -1,10 +1,17 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1> My Car Collection</h1>
+<div class= "button"><button class= "addtocollectionbtn"><a href= "addtocollection.php">Add a new car to the collection</a></button></div>
 <?php
-$db = new PDO('mysql:host=db; dbname=collectionDB', 'root', 'password');
-$db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
-$query = $db->prepare('SELECT `Brand`, `Model`, `Year_released` FROM `collectionapp`;');
-$query->execute();
-$result = $query->fetchAll();
-echo '<pre>';
-var_dump($result);
-echo '</pre>';
+require_once 'functions.php';
+$db= connectToDB();
+$query= getAllFromDB($db);
+echo carTable($query);
 ?>
+</body>
+</html>
+
+
